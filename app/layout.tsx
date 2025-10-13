@@ -110,6 +110,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#6FC06E" />
+        <meta name="google-site-verification" content="google8167aa05152c4bdd.html" />
       </head>
       <body
         className={`${poppins.variable} ${firaMono.variable} antialiased font-sans`}
