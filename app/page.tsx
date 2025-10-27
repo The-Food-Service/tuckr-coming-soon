@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 import { FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaApple, FaGooglePlay } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 
@@ -113,6 +114,23 @@ export default function Home() {
             <a href="https://www.instagram.com/tuckrfoods/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram className="text-white text-4xl sm:text-5xl hover:text-neutral-200 transition" />
             </a>
+          </div>
+        </div>
+
+        {/* Footer Links */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8 z-20 hidden sm:block">
+          <div className="flex items-center gap-6 text-white text-sm">
+            <Link href="/privacy" className="hover:text-gray-200 transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/50">•</span>
+            <Link href="/refund" className="hover:text-gray-200 transition-colors">
+              Refund Policy
+            </Link>
+            <span className="text-white/50">•</span>
+            <Link href="/terms" className="hover:text-gray-200 transition-colors">
+              Terms & Conditions
+            </Link>
           </div>
         </div>
       </div>
