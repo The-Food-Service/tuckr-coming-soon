@@ -91,7 +91,7 @@ export default function PrivacyPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Privacy Policy</h1>
             <p className="text-xl opacity-90 mb-4">Last Updated: {currentDate}</p>
             <p className="text-lg opacity-90 max-w-3xl">
-              This Privacy Policy describes how Tuckr ("we," "us," or "our") collects, uses, and discloses your information when you use our mobile applications, Tuckr (for users) and Tuckr Partner (for vendors), and any related services (collectively, the "Services").
+              This Privacy Policy describes how Tuckr (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and discloses your information when you use our mobile applications, Tuckr (for users) and Tuckr Partner (for vendors), and any related services (collectively, the &quot;Services&quot;).
             </p>
             <p className="text-base mt-4 opacity-80 max-w-3xl font-semibold">
               By accessing or using our Services, you agree to the collection and use of information in accordance with this policy.
@@ -129,8 +129,8 @@ export default function PrivacyPage() {
                     When you use our Services, we may automatically collect certain information, including:
                   </p>
                   <ul className="list-disc list-inside space-y-2 ml-4 text-gray-700">
-                    <li><strong>Location Data:</strong> We may collect your precise or approximate location through your device's GPS if you grant us the location permission. This is essential for the core functionality of the Services.</li>
-                    <li><strong>Usage Data ("User Behaviour"):</strong> This includes information about how you interact with our Services, such as the features you use, the pages you view, the time and date of your visits, and other diagnostic data.</li>
+                    <li><strong>Location Data:</strong> We may collect your precise or approximate location through your device&apos;s GPS if you grant us the location permission. This is essential for the core functionality of the Services.</li>
+                    <li><strong>Usage Data (&quot;User Behaviour&quot;):</strong> This includes information about how you interact with our Services, such as the features you use, the pages you view, the time and date of your visits, and other diagnostic data.</li>
                   </ul>
                 </div>
 
@@ -145,7 +145,7 @@ export default function PrivacyPage() {
                     <li><strong>Notifications:</strong> To send you updates, alerts, and other service-related communications.</li>
                   </ul>
                   <p className="text-lg leading-relaxed mt-4 text-gray-700">
-                    You can manage or disable these permissions in your device's settings.
+                    You can manage or disable these permissions in your device&apos;s settings.
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export default function PrivacyPage() {
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">With Service Providers:</h3>
                   <p className="text-gray-700">
-                    We may employ third-party companies and individuals to facilitate our Services ("Service Providers"), perform Service-related tasks, or assist us in analyzing how our Services are used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+                    We may employ third-party companies and individuals to facilitate our Services (&quot;Service Providers&quot;), perform Service-related tasks, or assist us in analyzing how our Services are used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
                   </p>
                 </div>
 
@@ -220,9 +220,9 @@ export default function PrivacyPage() {
 
             {/* Section 5 */}
             <section className="border-l-4 border-[#6FC06E] pl-8">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">5. Children's Privacy</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">5. Children&apos;s Privacy</h2>
               <p className="text-lg leading-relaxed mb-4 text-gray-700">
-                Our Services are not directed to anyone under the age of 18 ("Children"), as they involve financial transactions. We do not knowingly collect personally identifiable information from anyone under the age of 18.
+                Our Services are not directed to anyone under the age of 18 (&quot;Children&quot;), as they involve financial transactions. We do not knowingly collect personally identifiable information from anyone under the age of 18.
               </p>
               <p className="text-lg leading-relaxed text-gray-700">
                 If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we will take steps to remove that information from our servers.
@@ -233,7 +233,7 @@ export default function PrivacyPage() {
             <section className="border-l-4 border-[#6FC06E] pl-8">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">6. Changes to This Privacy Policy</h2>
               <p className="text-lg leading-relaxed mb-4 text-gray-700">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top.
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date at the top.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 font-semibold">
                 You are advised to review this Privacy Policy periodically for any changes.

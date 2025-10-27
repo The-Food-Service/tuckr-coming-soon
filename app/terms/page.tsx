@@ -99,7 +99,7 @@ export default function TermsPage() {
             {/* Introduction */}
             <section className="space-y-4 text-lg leading-relaxed text-gray-700">
               <p>
-                Welcome to Tuckr ("we," "us," or "our"). These Terms and Conditions ("Terms") govern your use of our mobile applications, Tuckr (for users, "User App") and Tuckr Partner (for vendors, "Vendor App"), and our related services (collectively, the "Services").
+                Welcome to Tuckr (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). These Terms and Conditions (&quot;Terms&quot;) govern your use of our mobile applications, Tuckr (for users, &quot;User App&quot;) and Tuckr Partner (for vendors, &quot;Vendor App&quot;), and our related services (collectively, the &quot;Services&quot;).
               </p>
               <p className="font-semibold text-gray-900">
                 By accessing or using our Services, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not use our Services.
@@ -110,7 +110,7 @@ export default function TermsPage() {
             <section className="border-l-4 border-[#6FC06E] pl-8">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">1. Description of Service</h2>
               <div className="space-y-4 text-lg leading-relaxed text-gray-700">
-                <p>Tuckr provides a technology platform that connects users ("Users") with college food outlets ("Vendors") to allow Users to pre-order food and beverages.</p>
+                <p>Tuckr provides a technology platform that connects users (&quot;Users&quot;) with college food outlets (&quot;Vendors&quot;) to allow Users to pre-order food and beverages.</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Users use the Tuckr app to browse menus, place orders, and pay.</li>
                   <li>Vendors use the Tuckr Partner app to manage their outlet profile, upload menu items, and receive orders.</li>
@@ -140,7 +140,7 @@ export default function TermsPage() {
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">Disputes & Food Quality:</h3>
-                  <p>Tuckr is a technology platform. We are not a restaurant or food preparation entity. The Vendor is solely responsible for the quality, preparation, temperature, and accuracy of your food order. Any disputes regarding the food (e.g., "cold food," "incorrect item prepared") must be resolved directly with the Vendor.</p>
+                  <p>Tuckr is a technology platform. We are not a restaurant or food preparation entity. The Vendor is solely responsible for the quality, preparation, temperature, and accuracy of your food order. Any disputes regarding the food (e.g., &quot;cold food,&quot; &quot;incorrect item prepared&quot;) must be resolved directly with the Vendor.</p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">User Error:</h3>
@@ -159,7 +159,7 @@ export default function TermsPage() {
               <div className="space-y-6 text-lg leading-relaxed text-gray-700">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">Vendor Content:</h3>
-                  <p>As a Vendor, you may create and upload content, including your outlet name, menu items, descriptions, prices, and photos ("Vendor Content").</p>
+                  <p>As a Vendor, you may create and upload content, including your outlet name, menu items, descriptions, prices, and photos (&quot;Vendor Content&quot;).</p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">License Grant:</h3>
@@ -171,7 +171,7 @@ export default function TermsPage() {
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-bold text-xl mb-3 text-gray-900">Subscriptions & Free Trials:</h3>
-                  <p>We may offer subscription plans or "deals" for our Services. Free trials may be offered on a case-by-case basis by contacting us at tuckr.in/contact.</p>
+                  <p>We may offer subscription plans or &quot;deals&quot; for our Services. Free trials may be offered on a case-by-case basis by contacting us at tuckr.in/contact.</p>
                 </div>
               </div>
             </section>
@@ -213,7 +213,7 @@ export default function TermsPage() {
             <section className="border-l-4 border-[#6FC06E] pl-8">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">8. Disclaimer and Limitation of Liability</h2>
               <div className="space-y-4 text-lg leading-relaxed text-gray-700 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
-                <p className="font-semibold">The Services are provided "AS IS." Tuckr makes no warranties regarding the Services or the food provided by Vendors.</p>
+                <p className="font-semibold">The Services are provided &quot;AS IS.&quot; Tuckr makes no warranties regarding the Services or the food provided by Vendors.</p>
                 <p>In no event shall Tuckr be liable for any indirect, incidental, or special damages, including disputes, losses, or injuries arising from the conduct of Users or the quality of food provided by Vendors.</p>
               </div>
             </section>

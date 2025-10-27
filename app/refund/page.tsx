@@ -123,7 +123,7 @@ export default function RefundPage() {
                 <div className="border-l-4 border-[#6FC06E] pl-8">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">3. Disputes and Food Quality</h3>
                   <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                    Tuckr is a technology platform that facilitates your order with the food outlet ("Vendor"). We do not prepare, handle, or guarantee the quality of the food.
+                    Tuckr is a technology platform that facilitates your order with the food outlet (&quot;Vendor&quot;). We do not prepare, handle, or guarantee the quality of the food.
                   </p>
                   
                   <div className="space-y-4">
@@ -144,7 +144,7 @@ export default function RefundPage() {
                     <div className="bg-gray-50 p-6 rounded-lg">
                       <h4 className="font-bold text-lg mb-2 text-gray-900">Complaints:</h4>
                       <p className="text-gray-700">
-                        While we do not process refunds for food, you may log a formal complaint about a Vendor's quality or service by contacting us at <a href="mailto:hello@tuckr.in" className="text-[#6FC06E] font-semibold hover:underline">hello@tuckr.in</a>. We will use this information for our internal review of the Vendor.
+                        While we do not process refunds for food, you may log a formal complaint about a Vendor&apos;s quality or service by contacting us at <a href="mailto:hello@tuckr.in" className="text-[#6FC06E] font-semibold hover:underline">hello@tuckr.in</a>. We will use this information for our internal review of the Vendor.
                       </p>
                     </div>
                   </div>
@@ -162,7 +162,7 @@ export default function RefundPage() {
                 <div className="border-l-4 border-[#6FC06E] pl-8">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">1. Subscription Fees</h3>
                   <p className="text-lg leading-relaxed text-gray-700">
-                    Any subscription fees, "deals," or service charges paid by a Vendor to Tuckr for use of the Tuckr Partner platform are non-refundable unless otherwise specified.
+                    Any subscription fees, &quot;deals,&quot; or service charges paid by a Vendor to Tuckr for use of the Tuckr Partner platform are non-refundable unless otherwise specified.
                   </p>
                 </div>
 
