@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="t4">
+  <title id="t4">Placeholder  vendor dashboard</title>
+  <defs>
+    <linearGradient id="vg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F6E8"/>
+      <stop offset="100%" style="stop-color:#B8E5B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="24" fill="#f4fbf4"/>
+  <rect x="24" y="24" width="1152" height="652" rx="16" fill="url(#vg)" stroke="rgba(111,192,110,0.35)" stroke-width="2"/>
+  <rect x="48" y="48" width="200" height="600" rx="12" fill="rgba(111,192,110,0.12)"/>
+  <rect x="280" y="48" width="896" height="64" rx="12" fill="rgba(255,255,255,0.7)"/>
+  <rect x="280" y="136" width="280" height="140" rx="12" fill="rgba(255,255,255,0.85)"/>
+  <rect x="580" y="136" width="280" height="140" rx="12" fill="rgba(255,255,255,0.75)"/>
+  <rect x="880" y="136" width="276" height="140" rx="12" fill="rgba(255,255,255,0.65)"/>
+  <rect x="280" y="300" width="876" height="320" rx="12" fill="rgba(255,255,255,0.6)"/>
+  <text x="600" y="370" text-anchor="middle" fill="#2d5a2c" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Replace: vendor dashboard</text>
+  <text x="600" y="402" text-anchor="middle" fill="#4a7c48" font-family="system-ui,sans-serif" font-size="14">Wide screenshot · analytics &amp; orders</text>
+</svg>

@@ -1,58 +1,38 @@
 import type { Metadata } from "next";
-import { Poppins, Fira_Mono } from "next/font/google";
+import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  weight: ["400", "600", "700"],
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-syne",
+  weight: ["500", "600", "700", "800"],
 });
 
-const firaMono = Fira_Mono({
-  weight: ["400", "700"],
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-fira-mono",
+  variable: "--font-dm",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Tuckr | Coming Soon | One Stop Pick & Go Solution",
-  description: "Tuckr is under development and will soon be available for download on Apple Store & Google Play Store. Your One Stop Pick & Go Solution.",
+  title: "Tuckr | Pre-order campus food. Skip the queue.",
+  description:
+    "Tuckr lets students pre-order from campus outlets, see live menus and wait times, and pick up when ready. Pilots for colleges, canteens, and food courts.",
   keywords: [
     "Tuckr",
-    "Coming Soon",
-    "Pick and Go",
-    "Food App",
-    "BITS Hyderabad",
-    "Apple Store",
-    "Google Play Store",
-    "Food Delivery",
-    "Startup",
+    "campus food",
+    "pre-order",
+    "college canteen",
+    "food court",
+    "skip the queue",
+    "Hyderabad",
+    "student food app",
     "Tuckr Foods",
-    "Tuckr Foods Hyderabad",
-    "Tuckr Food Pick & Go",
-    "Tuckr Food App",
-    "Food Pick & Go",
-    "College Food App",
-    "Gen Z Food App",
-    "BITS Hyderabad Start Up",
-    "Pick & Go",
-    "Pick & Go App",
-    "Pick & Go Food",
-    "Pick & Go Food App",
-    "Pick & Go Food Delivery",
-    "Pick & Go Food Delivery App",
-    "Pick & Go Food Delivery App",
-    "Tucker",
-    "Tucker Foods",
-    "Tucker Food Pick Up",
-    "Tucker Pick and Go",
-    "Tucker BITS Hyderabad",
-    "Tuckr BITS Pilani",
-    "Tucker BITS Hyderabad",
   ],
   openGraph: {
-    title: "Tuckr | Coming Soon",
-    description: "Tuckr is under development and will soon be available for download on Apple Store & Google Play Store. Your One Stop Pick & Go Solution for college food outlets.",
+    title: "Tuckr | Pre-order campus food. Skip the queue.",
+    description:
+      "Pre-order from campus outlets, pay online or at the counter, and pick up when your order is ready.",
     url: "https://tuckr.in/",
     siteName: "Tuckr",
     images: [
@@ -60,19 +40,20 @@ export const metadata: Metadata = {
         url: "/tuckr-og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tuckr Coming Soon"
-      }
+        alt: "Tuckr",
+      },
     ],
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tuckr | Coming Soon",
-    description: "Tuckr is under development and will soon be available for download on Apple Store & Google Play Store. Your One Stop Pick & Go Solution for college food outlets.",
+    title: "Tuckr | Pre-order campus food. Skip the queue.",
+    description:
+      "Pre-order from campus outlets, pay online or at the counter, and pick up when your order is ready.",
     site: "@tuckrfoods",
     creator: "@tuckrfoods",
-    images: ["/tuckr-og-image.png"]
+    images: ["/tuckr-og-image.png"],
   },
   metadataBase: new URL("https://tuckr.in/"),
   themeColor: "#6FC06E",
@@ -80,13 +61,13 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: "Tuckr",
     statusBarStyle: "default",
-    capable: true
+    capable: true,
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png"
-  }
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -97,7 +78,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Extra meta tags for SEO and social platforms */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Tuckr Foods" />
@@ -110,13 +90,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#6FC06E" />
-        <meta name="google-site-verification" content="SJFL1iOZBlLSRY79_WGViScqEzMdT7lsKIqefVZF46k" />     
+        <meta
+          name="google-site-verification"
+          content="SJFL1iOZBlLSRY79_WGViScqEzMdT7lsKIqefVZF46k"
+        />
       </head>
-      <body
-        className={`${poppins.variable} ${firaMono.variable} antialiased font-sans`}
-      >
-        {children}
-      </body>
+      <body className={`${syne.variable} ${dmSans.variable} antialiased`}>{children}</body>
     </html>
   );
 }

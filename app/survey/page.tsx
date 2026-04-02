@@ -59,13 +59,13 @@ export default function SurveyPage() {
         
         <div className="relative z-10 text-center text-white max-w-2xl mx-auto px-8">
           <div className="mb-8">
-            <h1 className="text-5xl sm:text-6xl font-bold mb-4 font-[var(--font-poppins)]">
+            <h1 className="text-5xl sm:text-6xl font-bold mb-4 font-sans">
               Help Us Build
             </h1>
-            <h2 className="text-3xl sm:text-4xl font-semibold mb-6 font-[var(--font-poppins)]">
+            <h2 className="text-3xl sm:text-4xl font-semibold mb-6 font-sans">
               The Perfect Tuckr
             </h2>
-            <p className="text-lg sm:text-xl mb-8 font-[var(--font-poppins)] opacity-90">
+            <p className="text-lg sm:text-xl mb-8 font-sans opacity-90">
               Your feedback shapes our Pick & Go experience. Take our quick survey and help us create something amazing for college students!
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function SurveyPage() {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
               <div className="w-8 h-8 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
             </div>
-            <p className="text-lg font-[var(--font-poppins)] mb-6">
+            <p className="text-lg font-sans mb-6">
               Redirecting to survey...
             </p>
           </div>
@@ -82,16 +82,16 @@ export default function SurveyPage() {
           <div className="space-y-4">
             <a 
               href="https://forms.gle/6kXqyJLhFaBUra3u7" 
-              className="inline-block px-8 py-4 bg-white text-[#6FC06E] font-bold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-[var(--font-poppins)] shadow-lg"
+              className="inline-block px-8 py-4 bg-white text-[#6FC06E] font-bold text-lg rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-sans shadow-lg"
             >
               Take Survey Now
             </a>
-            <p className="text-sm font-[var(--font-poppins)] opacity-75">
+            <p className="text-sm font-sans opacity-75">
               Takes only 2-3 minutes
             </p>
           </div>
           
-          <div className="mt-12 text-sm font-[var(--font-poppins)] opacity-75">
+          <div className="mt-12 text-sm font-sans opacity-75">
             <p>📍 BITS Hyderabad • 🍕 Pick & Go • 📱 Coming Soon</p>
           </div>
         </div>

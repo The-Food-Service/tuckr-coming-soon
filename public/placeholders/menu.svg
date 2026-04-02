@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="t2">
+  <title id="t2">Placeholder  live menu screen</title>
+  <defs>
+    <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8E8B6"/>
+      <stop offset="100%" style="stop-color:#6FC06E"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" rx="48" fill="#1a3d1a"/>
+  <rect x="14" y="14" width="362" height="816" rx="40" fill="url(#g2)"/>
+  <rect x="40" y="64" width="200" height="22" rx="6" fill="rgba(0,0,0,0.12)"/>
+  <rect x="40" y="110" width="140" height="140" rx="20" fill="rgba(255,255,255,0.35)"/>
+  <rect x="200" y="110" width="140" height="64" rx="12" fill="rgba(255,255,255,0.22)"/>
+  <rect x="200" y="186" width="140" height="64" rx="12" fill="rgba(255,255,255,0.18)"/>
+  <rect x="40" y="280" width="310" height="56" rx="14" fill="rgba(255,255,255,0.2)"/>
+  <rect x="40" y="352" width="310" height="56" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="195" y="520" text-anchor="middle" fill="rgba(26,61,26,0.9)" font-family="system-ui,sans-serif" font-size="15" font-weight="600">Replace: live menu</text>
+  <text x="195" y="548" text-anchor="middle" fill="rgba(26,61,26,0.65)" font-family="system-ui,sans-serif" font-size="12">390 × 844 · PNG or WebP</text>
+</svg>

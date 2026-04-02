@@ -70,7 +70,7 @@ export default function RefundPage() {
   return (
     <>
       <CustomCursor />
-      <div className="min-h-screen bg-white font-[var(--font-poppins)] text-gray-900">
+      <div className="min-h-screen bg-white font-sans text-gray-900">
         {/* Top navigation */}
         <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-sm border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-8 py-6 flex justify-between items-center">
