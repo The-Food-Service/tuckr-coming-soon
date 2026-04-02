@@ -278,8 +278,8 @@ export default function Home() {
                 Skip the wait.
               </h1>
               <p className="hero-stagger-3 mt-5 max-w-xl text-base font-medium leading-relaxed text-white/95 sm:text-lg sm:text-xl">
-                Order from campus outlets, see what&apos;s available in real time, and pick up when your food is
-                ready—so you spend less time in line and more time on what matters.
+                Order from campus outlets, check what&apos;s in stock, and collect when it&apos;s ready. Shorter queues,
+                more time for class or a proper break.
               </p>
               <div className="hero-stagger-4 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
@@ -297,7 +297,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-stagger-5 flex min-w-0 justify-center lg:justify-end">
-              <PhoneShot src={SCREEN.outlets} alt="Tuckr app — campus outlets (placeholder)" priority />
+              <PhoneShot src={SCREEN.outlets} alt="Tuckr app: campus outlets (placeholder)" priority />
             </div>
           </div>
         </section>
@@ -317,20 +317,20 @@ export default function Home() {
                 Tuckr in motion
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-base text-[#2d5a2c]/90 sm:text-lg">
-                Live menus, clear wait signals, and a straight path from tap to pickup—built for busy campuses.
+                Menus that match the kitchen, a sense of how long things take, and checkout in a few taps.
               </p>
             </ScrollReveal>
             <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               <ScrollReveal delayMs={40} className="flex flex-col items-center">
-                <PhoneShot src={SCREEN.menu} alt="Tuckr app — live menu (placeholder)" />
+                <PhoneShot src={SCREEN.menu} alt="Tuckr app: live menu (placeholder)" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Live menu &amp; availability</p>
               </ScrollReveal>
               <ScrollReveal delayMs={90} className="flex flex-col items-center">
-                <PhoneShot src={SCREEN.order} alt="Tuckr app — order and pickup (placeholder)" />
+                <PhoneShot src={SCREEN.order} alt="Tuckr app: order and pickup (placeholder)" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Order &amp; pickup, your way</p>
               </ScrollReveal>
               <ScrollReveal delayMs={140} className="flex flex-col items-center sm:col-span-2 lg:col-span-1">
-                <PhoneShot src={SCREEN.outlets} alt="Tuckr app — outlets list (placeholder)" />
+                <PhoneShot src={SCREEN.outlets} alt="Tuckr app: outlets list (placeholder)" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Your campus, one place</p>
               </ScrollReveal>
             </div>
@@ -349,23 +349,23 @@ export default function Home() {
                 Built for how campuses actually eat
               </h2>
               <p className="mt-3 max-w-2xl text-lg text-neutral-700">
-                Queues, uncertain menus, and rushed breaks—we designed Tuckr to remove the friction for students and
-                give venues the signal they need to serve better.
+                Campus eating means lines, guessing what&apos;s on, and tight gaps between lectures. Tuckr is for
+                students who want to know before they leave, and for outlets that need a clearer read on demand.
               </p>
             </ScrollReveal>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               {[
                 {
                   title: "Uncertainty",
-                  body: "Students often don’t know if an outlet is open or if a favourite item is still available—so every food run becomes a gamble on time.",
+                  body: "It’s often unclear if a stall is open or if the usual dish is still there. You burn minutes walking over to find out.",
                 },
                 {
                   title: "Queues",
-                  body: "Long, unpredictable lines steal minutes from class and study blocks. Pre-ordering turns that wait into a planned pickup.",
+                  body: "Long lines eat into short breaks. Ordering ahead turns the wait into a fixed pickup time.",
                 },
                 {
                   title: "Operations",
-                  body: "Outlets need clearer demand signals to staff, stock, and promote smartly—without adding complexity at the counter.",
+                  body: "Staffing and stocking are easier with a view of incoming orders, without slowing down the people at the register.",
                 },
               ].map((card, i) => (
                 <ScrollReveal key={card.title} delayMs={i * 70} className="rounded-2xl border border-[#6FC06E]/20 bg-[#f6fbf6] p-6 shadow-sm">
@@ -378,7 +378,7 @@ export default function Home() {
               {[
                 { title: "Pre-order & skip the queue", body: "Order ahead, pay online or at the counter, and collect when it’s ready." },
                 { title: "Live menu & wait insight", body: "See what’s in stock and get prep-time context before you commit." },
-                { title: "Venue tools & offers", body: "Analytics and promotions help outlets match demand and reward regulars." },
+                { title: "Venue tools & offers", body: "See order volume and run simple promos without extra hassle at the counter." },
               ].map((card, i) => (
                 <ScrollReveal key={card.title} delayMs={i * 80} className="rounded-2xl bg-[#6FC06E] p-6 text-white shadow-md shadow-[#2d5a2c]/20">
                   <h3 className="font-display text-lg font-bold">{card.title}</h3>
@@ -400,8 +400,8 @@ export default function Home() {
             <ol className="mt-10 grid gap-8 md:grid-cols-3">
               {[
                 { step: "01", title: "Choose your outlet", body: "Browse campus canteens, food courts, and stalls in one place." },
-                { step: "02", title: "Order with confidence", body: "Check live availability and timing, then pay the way you prefer." },
-                { step: "03", title: "Pick up on your schedule", body: "Head over when it’s ready—no standing in line guessing." },
+                { step: "02", title: "Place your order", body: "See availability and rough timing, then pay the way you prefer." },
+                { step: "03", title: "Pick up when it’s ready", body: "Walk over when your order is up instead of queueing just to ask." },
               ].map((item, i) => (
                 <ScrollReveal key={item.step} delayMs={i * 100} className="relative pl-12 sm:pl-14">
                   <span
@@ -430,8 +430,8 @@ export default function Home() {
                 For colleges, canteens, and food courts
               </h2>
               <p className="mt-4 max-w-3xl text-lg text-neutral-700">
-                Residential campuses, multi-outlet food courts, standalone kiosks, and busy mess halls—if students queue
-                for food, Tuckr can streamline the flow. Venues get operational clarity; students get time back.
+                Hostels, courts with many stalls, kiosks, busy mess halls: anywhere people queue for food, Tuckr spreads
+                demand and shortens waits. Outlets see order patterns; students spend less time standing around.
               </p>
             </ScrollReveal>
             <ScrollReveal delayMs={80} className="mt-10 overflow-hidden rounded-2xl border border-[#6FC06E]/25 bg-[#f6fbf6] p-4 shadow-inner sm:p-6">
@@ -462,20 +462,21 @@ export default function Home() {
                 Pilot with us
               </h2>
               <p className="mt-4 text-lg text-[#2d5a2c]/95">
-                We partner with campuses and outlet operators to run focused pilots: onboarding, menu setup, payments,
-                and a clear read on adoption and queue impact. Tell us about your setting and we&apos;ll follow up.
+                We run pilots with campuses and outlet groups: menus live, payments working, then we watch whether queues
+                actually shorten. Describe your site and we&apos;ll follow up.
               </p>
               <ul className="mt-6 list-inside list-disc space-y-2 text-[#1e4a1d]/90">
-                <li>Zero heavy infrastructure—digital ordering on top of how you already serve</li>
+                <li>No big hardware rollout: digital ordering on top of how you already serve</li>
                 <li>Training and launch support for outlet teams</li>
-                <li>Metrics that matter: orders, peaks, and student experience</li>
+                <li>Orders, busy hours, and whether students keep using it</li>
               </ul>
             </ScrollReveal>
             <ScrollReveal delayMs={100}>
               <div className="rounded-2xl border border-[#6FC06E]/30 bg-white p-6 shadow-lg shadow-[#2d5a2c]/5 sm:p-8">
                 <h3 className="font-display text-lg font-bold text-[#1e4a1d]">Request a pilot</h3>
                 <p className="mt-1 text-sm text-neutral-600">
-                  Share a few details—we&apos;ll reach out on <span className="font-medium text-[#1e4a1d]">hello@tuckr.in</span>.
+                  Send a short note. We read each one and reply from{" "}
+                  <span className="font-medium text-[#1e4a1d]">hello@tuckr.in</span>.
                 </p>
                 <div className="mt-6">
                   <PilotForm />
@@ -497,7 +498,7 @@ export default function Home() {
                 Contact us
               </h2>
               <p className="mt-3 max-w-xl text-lg text-white/95">
-                Press, partnerships, students with questions—we&apos;re happy to hear from you.
+                Press, partners, or students with a question: write to us.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-8">
                 <a
@@ -522,7 +523,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:flex-row sm:items-end sm:justify-between sm:px-6">
           <div>
             <p className="font-display text-2xl font-bold">Tuckr</p>
-            <p className="mt-1 text-sm text-white/70">Your one-stop pick &amp; go solution for campus food.</p>
+            <p className="mt-1 text-sm text-white/70">Campus food, ordered ahead.</p>
             <div className="mt-4 flex items-center gap-2 text-sm text-white/80">
               <FaMapMarkerAlt className="shrink-0 text-[#6FC06E]" aria-hidden />
               <span className="tabular-nums">17.5451° N, 78.5724° E</span>

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
+import { TabAttentionTitle } from "@/components/TabAttentionTitle";
+import { SITE_DOCUMENT_TITLE } from "@/lib/siteTitle";
 import "./globals.css";
 
 const syne = Syne({
@@ -15,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tuckr | Pre-order campus food. Skip the queue.",
+  title: SITE_DOCUMENT_TITLE,
   description:
-    "Tuckr lets students pre-order from campus outlets, see live menus and wait times, and pick up when ready. Pilots for colleges, canteens, and food courts.",
+    "Pre-order from campus outlets, check what's in stock, pick up when it's ready. Pilots with colleges, canteens, and food courts.",
   keywords: [
     "Tuckr",
     "campus food",
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     "Tuckr Foods",
   ],
   openGraph: {
-    title: "Tuckr | Pre-order campus food. Skip the queue.",
+    title: SITE_DOCUMENT_TITLE,
     description:
       "Pre-order from campus outlets, pay online or at the counter, and pick up when your order is ready.",
     url: "https://tuckr.in/",
@@ -48,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tuckr | Pre-order campus food. Skip the queue.",
+    title: SITE_DOCUMENT_TITLE,
     description:
       "Pre-order from campus outlets, pay online or at the counter, and pick up when your order is ready.",
     site: "@tuckrfoods",
@@ -95,7 +97,10 @@ export default function RootLayout({
           content="SJFL1iOZBlLSRY79_WGViScqEzMdT7lsKIqefVZF46k"
         />
       </head>
-      <body className={`${syne.variable} ${dmSans.variable} antialiased`}>{children}</body>
+      <body className={`${syne.variable} ${dmSans.variable} antialiased`}>
+        <TabAttentionTitle />
+        {children}
+      </body>
     </html>
   );
 }

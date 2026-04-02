@@ -2,8 +2,6 @@
 
 import { FormEvent, useState } from "react";
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_PILOT_ID;
-
 export function PilotForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
@@ -16,32 +14,25 @@ export function PilotForm() {
     const email = String(fd.get("email") ?? "").trim();
     const phone = String(fd.get("phone") ?? "").trim();
     const message = String(fd.get("message") ?? "").trim();
+    const website = String(fd.get("website") ?? "").trim();
 
-    if (FORMSPREE_ID) {
-      setStatus("sending");
-      try {
-        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-          method: "POST",
-          body: fd,
-          headers: { Accept: "application/json" },
-        });
-        if (res.ok) {
-          setStatus("sent");
-          form.reset();
-        } else {
-          setStatus("error");
-        }
-      } catch {
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/pilot-inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ name, organization, email, phone, message, website }),
+      });
+      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+      if (res.ok && data.ok !== false) {
+        setStatus("sent");
+        form.reset();
+      } else {
         setStatus("error");
       }
-      return;
+    } catch {
+      setStatus("error");
     }
-
-    const subject = encodeURIComponent(`Pilot inquiry: ${organization || "Tuckr"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nOrganization / campus: ${organization}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`,
-    );
-    window.location.href = `mailto:hello@tuckr.in?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -50,8 +41,14 @@ export function PilotForm() {
       className="flex flex-col gap-4 text-left"
       noValidate
     >
-      {FORMSPREE_ID ? <input type="hidden" name="_subject" value="Tuckr pilot inquiry" /> : null}
-      <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        className="hidden"
+        aria-hidden="true"
+      />
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="flex flex-col gap-1.5 text-sm font-medium text-[#1e4a1d]">
           Name
@@ -87,8 +84,9 @@ export function PilotForm() {
           />
         </label>
         <label className="flex flex-col gap-1.5 text-sm font-medium text-[#1e4a1d]">
-          Phone <span className="font-normal text-[#2d5a2c]/70">(optional)</span>
+          Phone
           <input
+            required
             name="phone"
             type="tel"
             autoComplete="tel"
@@ -113,9 +111,9 @@ export function PilotForm() {
       >
         {status === "sending" ? "Sending…" : "Request a pilot"}
       </button>
-      {status === "sent" && FORMSPREE_ID && (
+      {status === "sent" && (
         <p className="text-sm font-medium text-[#1e4a1d]" role="status">
-          Thanks — we&apos;ll get back to you shortly.
+          Thanks. We&apos;ll reply soon.
         </p>
       )}
       {status === "error" && (
