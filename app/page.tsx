@@ -20,7 +20,9 @@ const SCREEN = {
   outlets: "/placeholders/outlets.svg",
   menu: "/placeholders/menu.svg",
   order: "/placeholders/order.svg",
-  vendor: "/placeholders/vendor-dashboard.svg",
+  featuredHome: "/featured-home.jpeg",
+  outletsPhoto: "/outlets.jpeg",
+  ordersPhoto: "/orders.jpeg",
 } as const;
 
 function CustomCursor() {
@@ -297,7 +299,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-stagger-5 flex min-w-0 justify-center lg:justify-end">
-              <PhoneShot src={SCREEN.outlets} alt="Tuckr app: campus outlets (placeholder)" priority />
+              <PhoneShot src={SCREEN.featuredHome} alt="Tuckr app: featured outlets and map" priority />
             </div>
           </div>
         </section>
@@ -322,15 +324,15 @@ export default function Home() {
             </ScrollReveal>
             <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
               <ScrollReveal delayMs={40} className="flex flex-col items-center">
-                <PhoneShot src={SCREEN.menu} alt="Tuckr app: live menu (placeholder)" />
+                <PhoneShot src={SCREEN.outletsPhoto} alt="Tuckr app: live menu at an outlet" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Live menu &amp; availability</p>
               </ScrollReveal>
               <ScrollReveal delayMs={90} className="flex flex-col items-center">
-                <PhoneShot src={SCREEN.order} alt="Tuckr app: order and pickup (placeholder)" />
+                <PhoneShot src={SCREEN.ordersPhoto} alt="Tuckr app: my orders" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Order &amp; pickup, your way</p>
               </ScrollReveal>
               <ScrollReveal delayMs={140} className="flex flex-col items-center sm:col-span-2 lg:col-span-1">
-                <PhoneShot src={SCREEN.outlets} alt="Tuckr app: outlets list (placeholder)" />
+                <PhoneShot src={SCREEN.featuredHome} alt="Tuckr app: featured outlets and map" />
                 <p className="font-display mt-4 text-center text-sm font-semibold text-[#1e4a1d]">Your campus, one place</p>
               </ScrollReveal>
             </div>
@@ -434,18 +436,16 @@ export default function Home() {
                 demand and shortens waits. Outlets see order patterns; students spend less time standing around.
               </p>
             </ScrollReveal>
-            <ScrollReveal delayMs={80} className="mt-10 overflow-hidden rounded-2xl border border-[#6FC06E]/25 bg-[#f6fbf6] p-4 shadow-inner sm:p-6">
-              <Image
-                src={SCREEN.vendor}
-                alt="Vendor dashboard (placeholder)"
-                width={1200}
-                height={700}
-                className="h-auto w-full rounded-xl object-cover"
-                unoptimized
-              />
-              <p className="mt-3 text-center text-sm text-[#2d5a2c]/80">
-                Replace with your vendor dashboard screenshot (wide aspect works best).
-              </p>
+            <ScrollReveal
+              delayMs={80}
+              className="mt-10 overflow-hidden rounded-2xl border border-dashed border-[#6FC06E]/40 bg-[#f6fbf6] shadow-inner"
+            >
+              <div className="flex min-h-[220px] flex-col items-center justify-center gap-2 px-6 py-14 sm:min-h-[280px] sm:py-16">
+                <p className="font-display text-lg font-bold text-[#1e4a1d] sm:text-xl">Coming soon</p>
+                <p className="max-w-md text-center text-sm leading-relaxed text-[#2d5a2c]/90">
+                  Venue dashboard preview isn&apos;t ready yet. Ask us about a pilot if you want a walkthrough.
+                </p>
+              </div>
             </ScrollReveal>
           </div>
         </section>
